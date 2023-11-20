@@ -1,0 +1,57 @@
+body{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 0 10px;
+}
+
+header nav ul li{
+    position: relative;
+    float: left;
+}
+
+header nav ul li a{
+    padding: 15px;
+    color: lightgrey;
+    display: block;
+}
+
+header nav ul li a:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background-color: dodgerblue;
+    color: white;
+    display: none;
+}
+
+nav ul li ul li{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 255, 0.1);
+}
+
+nav ul li ul li ul{
+    left: 179px;
+    top: 0;
+}
+
+nav ul li:hover > ul{
+    display: initial;
+}
+
+.products:hover{
+    background-color: dodgerblue;
+    color: white;
+}
